@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%; 
+} 
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffbf00;
+    font-weight: 600;
+    font-size: 2rem;
+    transition-property: border-bottom;
+    padding: 0rem 2rem;
+}
+
+main{
+    display: flex;
+    background-color: #000;
+    padding: 0 6rem;
+    height: 75rem;
+    box-shadow: inset 0 -120px #fff;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+main h1{
+    color: #fff;
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 6rem;
+}
+
+main h2{
+    color: #b2b2b2;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 3.5rem;
+}
+
+main a{
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(#ffbf00, #f2a50c);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    position: relative;
+}
+
+main img{
+    width: 52%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.salade{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(28rem, 1fr));
+    padding: 4rem 2rem;
+    gap: 4rem;
+}
+
+.salade h1.titulo{
+    color: #111111;
+    grid-column: 1/-1;
+    font-size: 6.2rem;
+    padding-left: 7rem;
+}
+
+.salade1 h1, .salade2 h1, .salade3 h1{
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: #111111;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 1.5rem;
+    transition: 0.5s ease;
+    text-align: center;
+}
+
+.salade1:hover > h1,.salade2:hover > h1, .salade3:hover > h1{
+    color: #ffbf00;
+}
+
+.salade h2{
+    font-family: 'Roboto' ,sans-serif;
+    color: #595959;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 0.5rem 1.5rem;
+}
+
+.salade img{
+    width: 100%;
+    object-fit: cover;
+    height: 40rem;
+    border-radius: 4px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+    background-color: #000;
+}
+
+footer h1{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+footer li{
+    padding: 1rem;
+    color: #fff;
+    list-style: none;
+}
+
+footer ul li{
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+footer ul .social{
+    margin-top: 1.5rem;
+    display: flex;
+}

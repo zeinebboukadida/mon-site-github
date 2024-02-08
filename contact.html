@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/restaurant_logo.png" type="image/x-icon">   
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html"><img src="./img/restaurant_logo.png" alt="logo" style="height: 80px;" ></a>
+        <nav>
+            <ul>
+                <li><a href="./produit.html">Nos produit</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="introduction">
+            <h2>DISPONIBLE 24/24 - 7/7</h2>
+            <h1>Contacter </h1>
+        </div>
+
+        <div class="formulaire">
+        <form id="contactForm" class="form">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+        <br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        
+            <button type="button" onclick="validateForm()">Envoyer</button>
+        </form>
+    </div>
+        <script>
+            function validateForm() {
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var message = document.getElementById('message').value;
+        
+                if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+                    alert('Veuillez remplir tous les champs.');
+                } else {
+                    alert('Formulaire envoyé!\nNom: ' + name + '\nEmail: ' + email + '\nMessage: ' + message);
+                    document.getElementById('contactForm').reset();
+                }
+            }
+        </script>
+        
+    </main>
+</body>
+<footer>
+    <h1>healthy life style</h1>
+    <ul>
+        <li>CONTACT</li>
+        <li>+216 00 000 000</li>
+        <li>contact@healthylifestyle.com</li>
+        <hr>
+        <li>Rue imem nefaa</li>
+        <li>Sousse - Tunisie</li>
+        <hr>
+        <div class="social">
+            <li><a href="#"><img src="./img/instagram.svg" alt="instagram"></a></li>
+            <li><a href="#"><img src="./img/facebook.svg" alt="facebook"></a></li>
+            <li><a href="#"><img src="./img/youtube.svg" alt="youtube"></a></li>
+        </div>
+    </ul>
+</footer>
+</html>
